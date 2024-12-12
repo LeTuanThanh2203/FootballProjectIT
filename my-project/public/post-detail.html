@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://w7.pngwing.com/pngs/781/377/png-transparent-football-player-sport-football-icon-thumbnail.png" />
+    <title id="title">Chi tiết bài viết</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="post-detail.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style> 
+    /* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Container tổng thể */
+.post-detail-card {
+  max-width: 900px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề bài viết */
+.post-title {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+/* Nội dung bài viết */
+.post-content {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Định dạng các đoạn văn */
+.post-content p {
+  margin-bottom: 15px;
+}
+
+/* Hình ảnh bên trong nội dung */
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Định dạng liên kết */
+.post-content a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.post-content a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+  #scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    display: none; /* Ban đầu ẩn */
+    z-index: 1000;
+  }
+
+  </style>
+  </head>
+<body>
+
+     <!-- Thanh điều hướng -->
+     <div class="navigation" style: position:sticky;>
+        <ul>
+            <li><a href="index.html" target="_self">Trang chủ</a></li>
+            <li><a href="listpost.html" target="_self">Bài viết</a></li>
+            <li><a href="tournament.html" target="_self">Giải đấu</a></li>
+            <li><a href="club.html" target="_self">Câu lạc bộ</a></li>
+            <li><a href="player.html" target="_self">Cầu thủ</a></li>
+        </ul>
+    </div>
+
+     <div id="post-title"></div>
+     
+
+
+     <div id="post-content">
+        <p >Nội dung bài viết</p>
+     </div>
+
+
+     <script>
+      // Tạo và thêm nút vào DOM
+      const button = document.createElement('button');
+      button.id = 'scrollToTop';
+      button.innerText = '↑';
+      document.body.appendChild(button);
+  
+      // Hiển thị nút khi cuộn xuống
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+          button.style.display = 'block';
+        } else {
+          button.style.display = 'none';
+        }
+      });
+  
+      // Cuộn lên đầu trang khi nhấn nút
+      button.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
+    
+
+
+    
+</body>
+</html>
