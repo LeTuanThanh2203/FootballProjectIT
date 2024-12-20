@@ -37,7 +37,7 @@ function renderPost(posts) {
     var htmls = posts.map(function (post) {
         // Kiểm tra và lấy URL của hình ảnh (nếu có)
         const imageUrl = post.Image?.length > 0 
-            ? `http://localhost:1337${post.Image[0].url}`
+            ? `footballprojectit-production.up.railway.app${post.Image[0].url}`
             : 'https://png.pngtree.com/png-clipart/20191120/original/pngtree-error-file-icon-vectors-png-image_5053766.jpg';
 
         // Trả về HTML cho mỗi bài viết
