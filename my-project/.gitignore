@@ -72,14 +72,21 @@ $RECYCLE.BIN/
 # Misc.
 ############################
 
+# Ignore all files starting with #
 *#
-ssl
-.idea
-nbproject
-public/uploads/*
-!public/uploads/.gitkeep
+
+# Ignore SSL folder (chứng chỉ bảo mật SSL)
+ssl/
+
+# Ignore JetBrains IDE configuration folder (.idea)
+.idea/
+
+# Ignore TypeScript build information file (.tsbuildinfo)
 .tsbuildinfo
+
+# Ignore ESLint cache file (.eslintcache)
 .eslintcache
+
 
 ############################
 # Node.js
