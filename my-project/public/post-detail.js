@@ -1,4 +1,4 @@
-const APIListPost = "http://localhost:1337/api/posts";
+const APIListPost = "https://footballprojectit-production.up.railway.app/api/posts";
 
 // Hàm render chi tiết bài viết dựa vào slug
 function renderPostDetail() {

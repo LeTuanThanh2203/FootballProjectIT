@@ -1,4 +1,4 @@
-var APIListCategories = "http://localhost:1337/api/categories?populate[posts][populate]=Image";
+var APIListCategories = "https://footballprojectit-production.up.railway.app/api/categories?populate[posts][populate]=Image";
 
 function Start() {
     fetchCategories(renderPost);

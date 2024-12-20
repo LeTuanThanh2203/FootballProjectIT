@@ -1,4 +1,4 @@
-var APIListPost = "http://localhost:1337/api/posts?populate=Image";
+var APIListPost = "https://footballprojectit-production.up.railway.app/api/posts?populate=Image";
 
 function Start() {
  
