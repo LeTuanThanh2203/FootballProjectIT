@@ -35,7 +35,7 @@ function renderPost(posts) {
 
     // Tạo danh sách bài viết dưới dạng HTML
     var htmls = posts.map(function (post) {
-        // Kiểm tra và lấy URL của hình ảnh (nếu có)
+        // Kiểm tra và lấy URL của hình ảnh (nếu có)s
         const imageUrl = post.Image?.length > 0 
             ? `footballprojectit-production.up.railway.app${post.Image[0].url}`
             : 'https://png.pngtree.com/png-clipart/20191120/original/pngtree-error-file-icon-vectors-png-image_5053766.jpg';

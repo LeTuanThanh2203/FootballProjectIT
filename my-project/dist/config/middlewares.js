@@ -7,10 +7,10 @@ exports.default = [
     {
         name: 'strapi::cors',
         config: {
-            enabled: true,
-            origin: ['https://football-project-it.vercel.app'], // Thay bằng URL frontend của bạn
-            methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Các phương thức HTTP cho phép
-            headers: ['Content-Type', 'Authorization'], // Header được phép
+            origin: ['https://football-project-it.vercel.app', 'http://localhost:5500'], // Các domain bạn cho phép truy cập
+            methods: ['GET', 'POST', 'PUT', 'DELETE'], // Các phương thức HTTP cho phép
+            headers: ['Content-Type', 'Authorization'], // Các headers cho phép
+            credentials: true, // Nếu cần thiết để gửi cookies
         },
     },
     'strapi::poweredBy',
