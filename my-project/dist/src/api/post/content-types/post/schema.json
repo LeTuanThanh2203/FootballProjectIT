@@ -1,0 +1,56 @@
+{
+    "kind": "collectionType",
+    "collectionName": "posts",
+    "info": {
+        "singularName": "post",
+        "pluralName": "posts",
+        "displayName": "POST",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Title": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "Slug": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "Excerpt": {
+            "type": "string",
+            "maxLength": 300
+        },
+        "category": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::category.category",
+            "inversedBy": "posts"
+        },
+        "Image": {
+            "type": "media",
+            "multiple": true,
+            "required": true,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "Author": {
+            "type": "string"
+        },
+        "DayPublished": {
+            "type": "datetime"
+        },
+        "Content": {
+            "type": "richtext"
+        }
+    }
+}
